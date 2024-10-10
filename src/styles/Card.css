@@ -1,0 +1,115 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.ticket-id {
+  font-size: 14px;
+  color: #8c8c8c;
+  font-weight: 500;
+}
+
+.user-avatar-container {
+  position: relative;
+  display: inline-block;
+}
+
+.user-avatar {
+  width: 48px; /* Increased width */
+  height: 48px; 
+  padding: 4px; /* Added padding */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.user-initials {
+  color: #333333;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.availability-indicator {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.availability-indicator.available {
+  background-color: yellow;
+}
+
+.availability-indicator.unavailable {
+  background-color: #ccc;
+}
+
+.card-title-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.status-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+}
+
+.priority-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+}
+
+.tag-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+.tag-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #bec2c8;
+  border-radius: 50%;
+}
+
+.tag {
+  font-size: 12px;
+  color: #8c8c8c;
+  font-weight: 500;
+}

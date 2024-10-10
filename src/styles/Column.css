@@ -1,0 +1,76 @@
+.column {
+  flex: 0 0 300px;
+  margin-right: 20px;
+  background-color: #f4f5f8;
+  border-radius: 8px;
+  padding: 10px;
+  transition: flex-basis 0.3s ease;
+}
+
+.column-empty {
+  flex: 0 0 auto;
+  width: auto;
+  min-width: 150px;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-icon,
+.priority-icon,
+.user-avatar {
+  width: 16px;
+  height: 16px;
+}
+
+.user-avatar {
+  border-radius: 50%;
+}
+
+.column-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.ticket-count {
+  font-size: 14px;
+  color: #8c8c8c;
+  padding: 2px 6px;
+}
+
+.column-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.action-icon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.column-body {
+  overflow-y: auto;
+  max-height: calc(100vh - 150px);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.column-body::-webkit-scrollbar {
+  display: none;
+}
+
+.column-empty .column-body {
+  display: none;
+}

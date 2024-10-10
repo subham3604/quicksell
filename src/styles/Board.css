@@ -1,0 +1,6 @@
+.board {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    height: calc(100vh - 60px);
+  }
